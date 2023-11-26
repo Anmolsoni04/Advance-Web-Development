@@ -1,0 +1,106 @@
+Their are 3 types of css:
+
+Inline css- used by adding style tags in html page.
+
+Internal css- it means to add a style tag and place the html page's style within it,
+
+External css- mostly used type of css. It means that we create a new file of .css and place all our style tags inside this .css files
+
+
+Examples:
+
+Inline:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: chocolate;">About Basic Of CSS</h1>
+    <div style="color:darkgreen">
+        <ol>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+    </div>
+    <p style="color: blueviolet;">We use External CSS mostly </p>
+</body>
+
+</html>
+
+
+Internal:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        div{
+            color: darkblue;
+        }
+        p{
+            color:brown
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ANMOL SONI</h1>
+    <h1>MUSICAL LIFE</h1>
+    <h1>COLLEGE LIFE</h1>
+    <h1>PERSONAL LIFE</h1>
+    <h1>SOCIAL LIFE</h1>
+    <h1>FAMILY LIFE</h1>
+    <h1>FRIENDSHIP LIFE</h1>
+    <div>
+        <ol>
+            <li>CODING</li>
+            <li>MUSIC</li>
+            <li>ACTING</li>
+    </div>
+    <p> These are the 3 Love of my life </p>
+
+</html>
+
+External:
+
+Make the new file  of name style.css and write the content of style tag in style.css file
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ANMOL SONI</h1>
+    <h1>MUSICAL LIFE</h1>
+    <h1>COLLEGE LIFE</h1>
+    <h1>PERSONAL LIFE</h1>
+    <h1>SOCIAL LIFE</h1>
+    <h1>FAMILY LIFE</h1>
+    <h1>FRIENDSHIP LIFE</h1>
+    <div>
+        <ol>
+            <li>CODING</li>
+            <li>MUSIC</li>
+            <li>ACTING</li>
+    </div>
+    <p> These are the 3 Love of my life </p>
+
+</html>

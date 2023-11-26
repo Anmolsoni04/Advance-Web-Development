@@ -1,0 +1,27 @@
+BOX MODEL MAIN PARAMETERS ARE:
+
+
+CONTENT
+PADDING
+BORDER
+MARGIN
+
+In css, each and every thing we make is called boxes. 
+
+content -> padding -> Border -> margin
+
+BOX SIZING BORDER BOX Actually changes the defination of HEIGHT because it means that it is the total sum of border and padding but not of margin!
+
+box sizing border box => Height of CONTENT + BORDER + PADDING
+
+exmple if :
+
+Height: 200px;
+box-sizing: border-box;
+
+here Height doesn't mean the height of only content. Here,  height means the total height of content, border and margin!
+
+
+MARGIN COLLAPSE:
+
+

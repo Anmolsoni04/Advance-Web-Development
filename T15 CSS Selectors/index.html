@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* ELEMENT SELECTOR */
+        div{
+            background-color: red;
+        }
+
+        /* CLASS SELECTOR */
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blueviolet;
+        }
+        /* ID SELECTOR */
+        #Violet{
+            background-color: goldenrod;
+        }
+        /* CHILD SELECTOR */
+        div > p{
+            background-color: brown;
+        }
+
+        /* NOW TO OVERCOME THE LIMITATION OF CHILD SELECTOR WE USE DESCENDENT SELECTOR */
+
+        /* DESCENDENT SELECTOR */
+
+        div p{
+            background-color: brown;
+        }
+
+        /* UNIVERSAL SELECTOR */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PSEUDO SELECTOR */
+
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: darkorchid;
+        }
+        a:active{
+            background-color:red;
+        }
+        a:hover{
+            background-color: darksalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a Anmol Soni 
+    </div>
+    <div class="blue">
+        My friend's name is Deepak Rathore
+        <article>
+            <p>He is a good writer</p>
+        </article>
+    </div>
+    <div id="Violet">
+        siddhant is a good story writer
+    </div>
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook2.com">Facebook</a>
+    
+</body>
+</html>
