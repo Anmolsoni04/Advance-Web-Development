@@ -1,0 +1,62 @@
+Imagine we have element that has been styled in 2 ways through css and we use 2 types of selectors to style.one style saying make the background color red and other one is saying make the bg color yellow. which one will applyy? This thing will possible with the help of specificity!
+
+CASCADING ALGORITHM in CSS:
+-> This algo is used for solving conflicts where multiple css rules apply to an html element.
+
+CASCADE ALGORITHM HAS 4 STAGES:
+
+1- Position and order of appearance
+2- specificity
+3- Origin
+4- Importance
+
+in detail:
+ The cascade algorithm has 4 distinct stages.
+
+Position and order of appearance: the order in which your CSS rules appear
+Specificity: an algorithm that determines which CSS selector has the strongest match
+Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+Lets look into all these one by one
+
+ORDER OF Specificity IS:
+
+inline style > ID Selector > Class Selector > Element selector > Universal selector
+
+WAY TO CALCULATE THE Specificity OF ANY SELECTORS:
+
+Universal SELECTOR - 0
+Element SELECTOR - 1
+CLASS or ATTRIBUTE or PSEUDO SELECTOR - 10
+ID SELECTOR - 100
+INLINE SELECTOR - 1000
+
+QUICK QUIZ QUES:
+What will be the specificity value of the following selector:
+
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+
+Sol-
+ a{
+    1
+ }
+ .harryclass{
+    10
+ }
+ .rohan-class{
+    10
+ }
+ [href]{
+    10
+ }
+ :hover{ 
+    // psuedo class
+    10 
+ }
+ Total ans - 41
+
+!important means-
+
+yadi hum kisi bhi color  (!important) lga dete hai to browser pr wahi color print hota hai kuki (!important) ki specificity sabse zyada hoti hai (10,000).

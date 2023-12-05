@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading and specificity</title>
+    <style>
+        /* Element selector */
+        /* SPECIFICITY of ELEMENT SELECTOR is 1 */
+        h1{
+            color: aquamarine;
+        }
+        /* Class selector */ 
+        /* SPECIFICITY of CLASS SELECTOR is 10 */
+        .purple{
+            color: purple !important;
+        }
+        /* Class selector */
+        /* SPECIFICITY of CLASS SELECTOR is 10 */
+        .red{
+            color: red; 
+        }
+        /* Class selector */
+        /* SPECIFICITY of CLASS SELECTOR is 10 */
+        .yellow{
+            color: rgb(222, 222, 18);
+        }
+        /* ATTRIBUTE SELECTOR */
+        /* SPECIFICITY OF ATTRIBUTE SELECTOR is 10 */
+        [data-x = attribute]{
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="purple red yellow" data-x="attribute">specificity in css</h1>
+</body>
+</html>
