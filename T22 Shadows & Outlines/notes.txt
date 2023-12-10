@@ -1,0 +1,30 @@
+Syntax of shadowing:
+box-shaddow: h-offset v-offset blur spread color inset;
+
+h-offset & v-offset -> Determines the position of shadow either it's vertical or horizontal
+
+blur: large the value, more will be the blurred shadow
+spread: expands Or shrinks the shadow size!
+color: defines the color of shadow
+inset: Makes the shaddow inner
+
+
+Syntax of text shadow is exactly same as the box shadow
+
+
+Outline's Syntax
+
+outline: width style color;
+
+
+Basic Differences between outline and border:
+
+
+1) postion-> outline dont take up space, they r drawn around the element but border don'take.
+
+2) Offset-> using the outline-offset property, we can set the space bw an outline and the border of an element, but this change can't possible in border
+
+3) width-> outlines have uniform width but border have a varying width
+
+4) rounded corners-> Outlines cannot have rounded corners  but using border-radius we can adjust the corners of border.
+
