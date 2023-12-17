@@ -1,0 +1,52 @@
+If any content is overflowing to a box, then to overcome this overflowing we use overflow property.
+
+There are several Ways to fix the overflow:
+
+We can use overflow-property
+i.e.,
+
+overflow: scroll;
+(Scroll bar will display either the content is fixed or not)
+
+overflow: auto;
+(Scroll bar display only when the content is not fixed, if the content is fixed then scroll bar will not display)
+
+white-space: nowrap;
+(It will show whole content in horizontal form, not vertical form)
+
+text-overflow: ellipses;
+(It will show ... after content) in any condition
+
+(Suggestion: use overflow: auto; Mostly!)
+
+overflow-x: hidden;
+overflow-y: hidden;
+
+-> will hide vertical & horizontal content
+
+or
+
+overflow-x: scroll;
+overflow-y: hidden;
+
+-> will display horizontal content and hide vertical content
+
+or
+
+overflow-x: hidden;
+overflow-y: scroll;
+
+-> will display vertical content and hide horizontal content
+
+or we can write this in a one line in a 
+following Way:
+
+(overflow: x y;) //syntax
+
+overflow: scroll hidden
+-> scroll at x and hidden at y
+
+or
+
+overflow: hidden scroll
+-> hidden at x and scroll at y.
