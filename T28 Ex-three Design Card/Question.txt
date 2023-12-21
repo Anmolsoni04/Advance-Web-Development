@@ -1,0 +1,2 @@
+Card.png is a file which contains card image. Write html and css code to design the card. 
+
