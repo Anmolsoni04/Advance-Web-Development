@@ -1,0 +1,6 @@
+By default, Postition is always static in CSS! means top, right, left, bottom, z-index can't be applied.
+
+To adjust these parameters like top bottom left right and z-index, we have to use postition:relative; or absolute
+
+Postition: relative;
+top: 3px;

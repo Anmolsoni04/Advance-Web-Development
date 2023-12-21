@@ -1,0 +1,1 @@
+Make a design using css in a way that 1st line is of bg color yellow and text color red and remaining 4 lines have should be bg color blue and text color should be white
