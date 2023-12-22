@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More in selectos</title>
+    <style>
+        /* .box{
+            background-color: red;
+        } */
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box p::first-line{
+            color: blanchedalmond;
+        } */
+        .boxes::after{
+            content: "Im anmol soni";
+            color: blue;
+        }
+        .boxes::before{
+            content: "Music is my passion";
+            color: rgb(234, 9, 9);
+        }
+        ::selection{
+            background-color:blueviolet;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }  
+        input::placeholder{
+            color: blue;
+            font-size: 56px;
+        }    
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hi im a box1
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, officiis! Cumque itaque eius ipsam repellendus voluptatibus tempore impedit aperiam dolorem nisi, ratione laboriosam quasi explicabo officia inventore ipsum voluptates a ipsa numquam vero quas quisquam praesentium dolore officiis nihil. Blanditiis autem praesentium in corrupti laudantium!
+            </p>
+        </div>
+        <div class="box">Hi im a box2</div>
+        <div class="box">Hi im a box3</div>
+    </div>
+</body>
+</html>
