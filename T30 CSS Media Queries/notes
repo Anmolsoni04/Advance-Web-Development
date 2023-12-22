@@ -1,0 +1,9 @@
+Media Queries are used to make the website responsive.
+
+Earlier it's known as media rule in css2
+
+now it's known as media queries in css3
+
+Syntax:
+@media not|only mediatype and (expressions) css-code;
+
