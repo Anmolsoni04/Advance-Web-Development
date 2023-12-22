@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Websites</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* :root{
+            --primary-color:blue;
+            --text-color:white;
+            --secondary-color:skyblue;
+        } */
+        :root{
+            --primary-color:rgb(255, 0, 200);
+            --text-color:rgb(222, 232, 220);
+            --secondary-color:rgb(185, 161, 192);
+        }
+        body{
+            background-color: var(--secondary-color);
+            padding: 12px 0;
+        }
+        nav{
+            background-color: var(--primary-color);
+            text-decoration: hidden;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            font-weight: bolder;
+            padding: 23px;
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        ul li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Skills</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+<!-- ANOTHER METHOD -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Websites</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --navbar-background-color:purple;
+            --navbar-color:rgb(18, 224, 18);
+            --navbar-border-color: rgb(199, 199, 54);
+            --body-background-color:rgb(35, 101, 101);
+        }
+
+        body{
+            background-color: var(--body-background-color);
+        }
+        
+        nav ul{
+            display: flex;
+            background-color:var(--navbar-background-color);
+            padding: 2px;
+            margin: 1px;
+        }
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 2px;
+            margin: 4px;
+            color: var(--navbar-color);
+            border: 2px solid;
+            border-color: var(--navbar-border-color);
+        }
+        @media only screen and (max-width:455px){
+            body{
+                background: rgb(86, 73, 172);
+            }
+            nav ul{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html> -->
