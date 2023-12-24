@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(5, 5, 5);
+
+        }
+
+        nav {
+            background-color: rgb(224, 77, 204);
+            padding: 27px;
+            width: 97vw;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 12px;
+            margin: 8px;
+            color: darkseagreen;
+            font-size: large;
+        }
+
+        .boxes {
+            background-color: green;
+            display: flex;
+            margin: 1px;
+
+
+        }
+
+        .boxes .box1 {
+            background-color: orange;
+            margin: 87px;
+            width: 20vw;
+            height: 30vh;
+            color: black;
+            text-align: center;
+        }
+
+
+        .boxes .box2 {
+            background-color: red;
+            margin: 87px;
+            width: 20vw;
+            height: 30vh;
+            color: white;
+            text-align: center;
+        }
+
+        .box3 {
+            width: 999px;
+            height: 12px;
+            background-color: rgb(52, 44, 44);
+            border: 2px solid rgb(240, 230, 230);
+            margin: 130px;
+            padding: 110px;
+            color: white;
+            border-radius: 58px;
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        .boxes:target {
+            display: block;
+        }
+
+        footer {
+            border: 2px solid white;
+            text-align: center;
+            height: 70px;
+            background-color: rgb(125, 125, 214);
+
+        }
+
+        footer p {
+            color: black;
+        }
+
+        footer p {
+            font-weight: bold;
+            font-size: large;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            bottom: 80px;
+            right: 10px;
+            position: fixed;
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <a href="/" class="active">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#career-section">Career</a>
+        <a href="#contact-section">Contact</a>
+    </nav>
+    <div class="boxes">
+        <div class="box1">
+            I am a box with orange color
+        </div>
+        <div class="box2">
+            I am a box with Red color
+        </div>
+    </div>
+    <div class="box3">
+        <p>
+            <b>Welcome to my home page!</b>
+        </p>
+    </div>
+</body>
+<img src="TransparentLogo.png" alt="">
+<footer>
+    <p>
+        This is the footer of this website
+    </p>
+</footer>
+</html>
