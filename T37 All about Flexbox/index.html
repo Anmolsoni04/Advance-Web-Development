@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;       
+         }
+        .box{
+           
+            display: flex;
+            height: 80vh;
+            align-items: center;
+            padding: 12px;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+/* Syntax -> flex direction | flex wrap */
+            gap: 40px 10px;
+            /* justify-content: center;
+            flex-direction: column;
+            align-content: flex-end;
+            OR align-content: flex-start; */
+
+            /* there is no justify-items in flexbox */
+
+        }
+        .boxes{
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            color: black;
+            background-color: purple;
+            border: 2px solid rgb(136, 136, 195);
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .boxes1 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <div class="boxes boxes1">box1</div>
+            <div class="boxes">box2</div>
+            <div class="boxes">box3</div>
+            <div class="boxes">box4</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box1</div>
+            <div class="boxes">box2</div>
+            <div class="boxes">box3</div>
+            <div class="boxes">box4</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box1</div>
+            <div class="boxes">box2</div>
+            <div class="boxes">box3</div>
+            <div class="boxes">box4</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+            <div class="boxes">box</div>
+        </div>
+    </main>
+</body>
+</html>
