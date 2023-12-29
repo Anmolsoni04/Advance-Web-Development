@@ -1,0 +1,21 @@
+Grid is used to make the different and stylish layouts!
+
+gird-template-columns: xyz px; (This property sorts the content columnwise)
+
+grid line and grid cell
+
+horizontal and vertical lines un a grid is known as grid lines
+
+small boxes between 2 lines is known as grid cell
+
+grid track and grid area
+
+space between 2 grid lines either horizontal OR Vertical is known as grid track
+
+area between 2 lines is known as grid area
+
+Grid templates row and columns
+
+ grid-row: 1/2; OR we can also write this as:
+ grid-row-start: 1
+ grid-row-end: 2
