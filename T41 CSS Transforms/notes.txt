@@ -1,0 +1,26 @@
+Their are few transforms property like:
+
+1) transform: rotate(12deg);
+i) transform: rotateX;
+ii) transform: rotateY;
+iii) transform: rotateZ;
+Note: degree of rotate like: turn;
+Like-> rotate(0.25turn);
+deg;
+
+2) transform: skew;
+i) transform: skewX;
+ii) transform: skewY;
+There's no skew in z-axis
+
+3) transform: translate(34px);
+transform: translate(34%);
+transform: translateX;
+transform: translateY;
+transform: translateZ;
+
+Note: we use translate mainly when we make navbar and we can use also all property in one line 
+transform: translateY(100d)
+
+4) transform: origin;
+default property is (50,50)
