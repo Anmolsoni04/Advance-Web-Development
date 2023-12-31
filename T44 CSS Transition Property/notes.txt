@@ -1,0 +1,10 @@
+Transition property includes 4 properties in total:
+
+a) transition-property: transform;
+b) transition-duration: 3s;
+c) transition-timing-function: ;
+-> ease
+-> ease-in
+-> ease-in-out
+-> ease-out
+d) transition-delay: 1s;
