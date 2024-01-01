@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and Positions</title>
+    <style>
+        .container{
+            background-color: rgb(155, 195, 195);
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-image: url(pic.jpg);
+            background-position: center center;
+        }
+
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            object-position: top left;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <img src="pic.jpg" alt="">
+    </div>
+</body>
+</html>
