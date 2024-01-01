@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        .container{
+            background-color: blue;
+            height: 62vh;
+            width: 97vw;
+            position: relative;
+        }
+        .ball{
+            background-color: red;
+            height: 143px;
+            width: 143px;
+            border-radius: 270px;
+            bottom: 0;
+            left: 0; 
+            position: absolute;
+            animation: MyBall 1s ease-in infinite;
+            
+            /* animation: MySecondBall 2s ease-out infinite; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            
+        }
+        @keyframes MyBall {
+            0%{
+                position: relative;
+                top: 25rem;
+            }
+            50%{
+                position: relative;
+                top:5rem;
+                left: 15rem;
+                background-color: aqua;
+            }
+            
+            70%{
+                position: relative;
+                top:5rem;
+                left: 20rem;
+                background-color: violet;
+            }
+
+            100%{
+                position: relative;
+                top: 25rem;
+                left: 30rem;
+                background-color: rgb(32, 32, 45);
+            }
+            
+        }
+
+        /* @keyframes MySecondBall {
+            0%{
+                position: relative;
+                top: 25rem;
+            }
+            50%{
+                position: relative;
+                top:2rem;
+                left: 10rem;
+                background-color: aqua;
+            }
+            
+            70%{
+                position: relative;
+                top:1rem;
+                left: 2rem;
+                background-color: violet;
+            }
+
+            100%{
+                position: relative;
+                top: 12rem;
+                left: 3rem;
+                background-color: rgb(32, 32, 45);
+            }
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
