@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: auto;
+
+    overflow-y: auto;
+   
+}
+main{
+    background-image: url(assets/images/bg-image.jpg);
+    height: 78vh;
+}
+
+main .box{
+    opacity: 0.5;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+h1{
+    color: white;
+}
+.box p h1{
+    color: white;
+    
+}
