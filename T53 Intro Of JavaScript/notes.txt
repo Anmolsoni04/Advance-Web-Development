@@ -1,0 +1,15 @@
+Javascript is a client side scripting language that makes webpages interactive!
+
+Node.js -> use javascript at backend.
+
+Content in script.js runs at browser.
+
+We can also change styles using javascript
+
+ex->  
+document.title = "Hi i am anmol soni"
+document.body.style.backgroundColor = "red"
+
+It can also add inline css on any element!
+
+npm -> node package manager
