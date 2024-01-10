@@ -1,0 +1,34 @@
+Node REPL:
+Read
+Evaluate
+Print
+Loop
+
+EcmaScript:
+It's an standard on which Js is based! It ensure that different doc's on js are actually talking about the same language!
+
+var VS let:
+
+var is globally scoped.
+let and const are block scoped.
+
+
+var can be updated & Re-Declared within it's scope.
+let can be updated but not declared.
+
+const can neither be updated nor re-declared
+
+That's why you always have to use 'let' in modern javascript!
+
+DATATYPES:
+Their are 2 types of data types 
+a) Primitiv datatypes 
+b) object datatypes
+
+a) Primitiv datatypes:
+-These are the set of basic datatypes.
+like: Null, undefined, boolean, string, number, symbol, bigint.
+
+b) Object:
+-user defined datatypes that is made from Primitiv datatypes.
+-This is a type of non-Primitiv type.
