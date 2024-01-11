@@ -1,0 +1,7 @@
+Their are total 5types of loops in Js:
+
+a) for loop
+b) for in loop
+c) for of loop
+d) while loop
+e) Do-while loop
