@@ -1,0 +1,11 @@
+Create a Faulty Calculator using JavaScript. This faulty calculator does following:
+It takes 2 numbers as i/p from the user
+It performs wrong operations as follows:
+
+
++ ---> -
+* ---> +
+- ---> /
+/ ---> **
+
+Performs wrong operations 10% of times.
