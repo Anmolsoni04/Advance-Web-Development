@@ -1,0 +1,47 @@
+Strings are used to store and manipulate the text.
+
+how to create the string in js:
+
+let name = "Harry"
+
+name.length = This property tells the size/length of the string.
+
+String can also created using single quotes:
+
+let name = 'Anmol'
+
+JavaScript uses template literals in Strings.
+
+String interpolation: process of inserting the variables in template literals.
+
+
+ESCAPE SEQUENCE CHARACTERS:
+
+\ -> add double quotes
+\n -> add new line
+\t -> Tab
+\r -> Return
+
+To convert in uppercase & lowercase:
+
+let b = "AnmolSoni"
+console.log(b.toUpperCase)
+console.log(b.toLowerCase)
+
+Slicing Methods:
+
+1) Slice:
+b.slice(2,5)
+-> (Capture only the part that comes bw this range)
+
+2) Replace:
+
+b.replace("", "");
+-> (Will replace 1st string by another)
+
+3) Concat:
+let a = "Anmol"
+let b = "Soni"
+b.concat(a, b)
+
+STRINGS ARE IMMUTABLE:
