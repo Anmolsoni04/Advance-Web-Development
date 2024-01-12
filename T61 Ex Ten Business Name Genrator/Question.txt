@@ -1,0 +1,16 @@
+Create a Business name generator by combining lists of adjectives and shop name and other words.
+
+Adjectives are:
+Craze
+Amazing
+Fire
+
+Shop name:
+Engine
+Foods
+Garments
+
+Other Words:
+Bros 
+Limited
+Hub
