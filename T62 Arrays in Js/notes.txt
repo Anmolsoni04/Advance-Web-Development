@@ -1,0 +1,26 @@
+Collection of multiple data types called Arrays in Js.
+
+like-> Strings, numbers, objects, etc.
+
+Array Methods:
+1) String Method -> It will return the numbers in arrays into strings.
+2) Join Method -> It will join the symbols, numbers, strings into an array like (-_, &,, and ) etc.... 
+3) Pop Method -> It will remove the element from the last in array.
+4) Push Method -> It will add the element in array from last and also return the length of the strings.
+5) Shift Method -> Works like Pop method & it's vice-versa.
+6) UnShift Method -> Works like push method & it's vice versa.
+7) Delete Method -> Will delete the number from array but length will remain same.
+8) Concat Method -> Will merge multiple arrays and make an single array.
+9) Splice Method ->  
+Let's an array:
+arr = [1,5,3,2,4]
+if we do splice :
+splice(2,3) then these numbers will remove:
+[3,2,4]
+and this is the generated array:
+[1,5]
+If we do this 
+console.log(1,5,4,100,200,300)
+then (100,200,300) will add in the Array
+[1,5,4,100,200,300]
+10) Slice Method -> it will slice out the piece from an array and will create a new array.
