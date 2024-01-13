@@ -1,0 +1,27 @@
+DOM -> DOCUMENT OBJECT MODEL
+It represents the page content as html.
+
+
+DEFINATION OF DOM:
+Dom represents a document with a logical tree. Each and ebery branch of the tree ends up in a node, and each node contains object. DOM Methods allow programmatic access to the tree.
+
+
+document.body -> page body as JS OBJECT
+document.body.style.background = "red"
+will change the background of the page to red/
+
+BOM -> BROWSER OBJECT MODEL
+It represents additional objects provided by the browser for wrking with everything except the document.
+
+The functions like alert, confrm, prompt are also the part of BOM.
+
+TREE-LIKE STRUCTURE:
+
+document -> root element:
+a) Element <head> -> Element <title> & Text "My Text".
+
+b) Element <body> :
+Element <h1> -> Text "My Header" 
+Element <p>: -> Text "My Paragraph
+
+
