@@ -1,0 +1,64 @@
+DOM TREE->
+It refers to the HTML page where all the nodes are objects.
+There are 3types of nodes:
+
+a) Text Nodes
+b) Element Nodes
+c) Comment Nodes
+
+in html, <html> -> ROOT
+<head>, <body> -> children
+
+*Text Node-> Leaf of the tree.
+
+CHIDREN OF AN ELEMENT:
+Direct as well as deeply nested elements of an element are called its children.
+
+child nodes -> are those nodes in which elements are the direct children. example> head,body are the direct children of html.
+
+element.firstChild -> first child element
+element.lastChild -> second child element
+element.childNodes -> All child nodes
+
+*ChildNodes always looks like an array but it's not array, actually an array but collection. We can use array from collection to convert it into an array.
+
+
+DOM COLLECTIONS:
+->They are read-only.
+-> They are live. element.childNodes variable(reference) will automatically update if child nodes of element is changed.
+-> They are iterable using for of loop.
+
+DOM SEARCHING:
+DOM searching is one of the DOM navigation property are helpful when the elements are close to eachother. If they are not close then we have more methods to search the DOM.
+
+here are some properties of DOM:
+
+1) document.getElementById:
+
+-> This method is used to get the element with a given id attribute.
+
+-> Always use elemen(t) in this case.
+
+-> let span = document.getElementById('span')
+span.style.color = "red"
+
+2) document.querySelectorAll
+-> Returns all the elements inside an element matching the given CSS selectors.
+
+3) document.querySelector 
+-> Returns 1st element for the given CSS selector. 
+
+4) document.getElementsByClassName
+-> Returns the elements that have the given CSS class.
+-> Always use element(s) in this case.
+
+5) document.getElementsByTagName
+-> Returns elements with the given tag name.
+
+6) document.getElementsByName
+-> Search the elements by the name attribute.
+
+7) Matches closest and contains methods
+->  Matches use to check if element matches the given css selector.
+-> Closest use yo look for the nearest ancestor that matches the given css selector.
+-> contains use to return true if one element is inside another element.
