@@ -1,0 +1,1 @@
+You have given 5 boxes and assign a random color and background using DOM Concepts.

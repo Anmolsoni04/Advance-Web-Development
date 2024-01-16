@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.box1{
+    border: 2px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 12px;
+    padding: 12px;
+    padding-bottom: 2px;
+}
+
+.box2{
+    border: 2px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 12px;
+    padding: 12px;
+    padding-bottom: 2px;
+}
+
+.box3{
+    border: 2px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 12px;
+    padding: 12px;
+    padding-bottom: 2px;
+}
+
+.box4{
+    border: 2px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 12px;
+    padding: 12px;
+    padding-bottom: 2px;
+}
+
+.box5{
+    border: 2px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 12px;
+    padding: 12px;
+    padding-bottom: 2px;
+}
