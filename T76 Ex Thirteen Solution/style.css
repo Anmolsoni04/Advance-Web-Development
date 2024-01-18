@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    color: white;
+    display: flex;
+    background-color: black;
+}
+
+.text{
+    margin-left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text1{
+    color: gray;
+    padding-top: 10px;
+}
+
+.durationBox span{
+    position: relative;
+    top: -28px;
+    left: 148px;
+    background: rgba(0, 0, 0, 0.717);
+    padding: 3.5px;
+    border-radius: 4px;
+}
