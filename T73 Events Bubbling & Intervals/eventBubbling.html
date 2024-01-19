@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+
+    <style>
+        .container{
+            background-color: red;
+            padding: 14px;
+            margin: 14px;
+            border: 2px solid black;
+        }
+        .childcontainer{
+            background-color: white;
+            padding: 14px;
+            margin: 14px;
+            border: 2px solid;
+        }
+        .child2{
+            background-color: red;
+            padding: 14px;
+            margin: 14px;
+            border: 2px solid black;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        I am the container
+        <section class="childcontainer">
+            I am the childcontainer
+            <div class="child2">
+                I am the 2nd child.
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Event -> Event is a signal, that something has happend like:
+
+    mouse events
+    keyboard events
+    form element events
+    document events -->
+
+    <script>
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Container has changed")
+
+        })
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("child Container has changed")
+
+        })
+        document.querySelector(".child2").addEventListener("click", (e) =>{
+            
+            // alert("child2 has changed")
+            e.stopPropagation()
+            e.onclick = function(){}
+            alert("click 2 has changed")
+            
+        })
+
+        // Set interval
+        function randomColor() {
+            let c1 = Math.ceil(0 + Math.random() * 255);
+            let c2 = Math.ceil(0 + Math.random() * 255);
+            let c3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${c1}, ${c2}, ${c3})`
+        }
+        setInterval( () => {
+            document.querySelector(".container").style.backgroundColor = randomColor()
+        }, 1000)
+
+        function randomColor() {
+            let c1 = Math.ceil(0 + Math.random() * 255);
+            let c2 = Math.ceil(0 + Math.random() * 255);
+            let c3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${c1}, ${c2}, ${c3})`
+        }
+        setInterval( () => {
+            document.querySelector(".childcontainer").style.backgroundColor = randomColor()
+        }, 1000)
+
+        function randomColor() {
+            let c1 = Math.ceil(0 + Math.random() * 255);
+            let c2 = Math.ceil(0 + Math.random() * 255);
+            let c3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${c1}, ${c2}, ${c3})`
+        }
+        setInterval( () => {
+            document.querySelector(".child2").style.backgroundColor = randomColor()
+        }, 1000)
+
+        // SetTimeOut -> Will decide itne after how many seconds the color will change. 
+
+        // IMPORTANT NOTE:
+        // To cancel the setInterval we have to use clearInterval and to cancel setTimeOut we have to use clearTimeOut. 
+      </script>
+
+</body>
+</html>
