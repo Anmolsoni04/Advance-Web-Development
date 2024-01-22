@@ -1,0 +1,5 @@
+Settle means -> resolve or reject
+
+resolve means -> Promise has settled successfully
+
+reject means -> Promise has not settled successfully
