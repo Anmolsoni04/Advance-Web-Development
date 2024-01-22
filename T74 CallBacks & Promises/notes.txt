@@ -1,0 +1,77 @@
+1) Callbacks:
+Callback fn is a func that pass into another func as an arguement, which make the outer func to complete an action.
+
+Example of callback:
+
+func loadScript(src, callback){
+let script = document.createElement('script')
+script.src=src
+script.onLoad = () => callback(script)
+document.head.append(Script)
+}
+
+loadScript('https://cdn.harry.com', (script)=> {
+alert('script is loaded')
+alert(script.src)
+});
+
+2) Promise handlers in Js:
+Promise handlers are the methods that runs independently.
+
+let p is a promise then:
+p.then(handler1)
+p.then(handler2)
+p.then(handler3)
+
+these all are runs independently.
+
+
+3) Promise API's:
+
+a) Promise.all(promises):
+let prom = new Promise((resolve,reject) => {
+     let num = Math.random()
+    let num = 10
+    if(num < 0.5){
+        reject("Our site is under maintainence")
+    }
+    else{
+        setTimeout(() => {
+            console.log("Our Site is working properly");
+            resolve("Name of the website is www.Cleanify.com")
+        }, 1000)
+    }
+})
+
+
+let prom2 = new Promise((resolve,reject) => {
+     let num = Math.random()
+    let num = 10
+    if(num < 0.5){
+        reject("Our site is under maintainence 2")
+    }
+    else{
+        setTimeout(() => {
+            console.log("Our Site is working properly 2");
+            resolve("Name of the website is www.support.Cleanify.com")
+        }, 2000)
+    }
+})
+
+b) Promise.allSettled(promises) -> either it will resolved or it will be rejected, it will returning the status and value of the promise.
+
+Diff b/w resolve and settle:
+
+Settle: 
+If it will resolve then you will get the value and if it will get rejected then you will get the reason why it is rejected.
+
+Resolve:
+opposite of Settled.
+
+c) Promise.race(promises) -> Waits for the first promise to settle and its result becomes the outcome.
+
+d) Promise.any(promises) -> Should not be rejected, it should be fulfil or resolved.
+
+e)  Promise.resolve(value) -> Makes a resolved promise with the given value
+
+f) Promise.reject(error) -> Makes a rejected promise with the given error.
