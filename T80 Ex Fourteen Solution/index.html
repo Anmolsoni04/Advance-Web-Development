@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Terminal</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(13, 85, 13);
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <script>
+        // Normal Approach to build hacker's terminal 
+
+        // setTimeout(() => {
+        //     document.getElementsByClassName("box")[0].innerHTML = "Initializing Hacking..."
+        // }, 1000);
+        // setTimeout(() => {
+        //     document.getElementsByClassName("box")[0].innerHTML = "Reading your files..."
+        // }, 2000);
+        // setTimeout(() => {
+        //     document.getElementsByClassName("box")[0].innerHTML = "Password files detected..."
+        // }, 3000);
+        // setTimeout(() => {
+        //     document.getElementsByClassName("box")[0].innerHTML = "Sending all passwords and personal files to server..."
+        // }, 4000);
+        // setTimeout(() => {
+        //     document.getElementsByClassName("box")[0].innerHTML = "Cleaning up..."
+        // }, 5000);
+
+
+        // Loop Approach
+        // const messageArr = ["Initializing Hacking...", "Reading Your Files", "Password Files Detected",
+        //     "Sending All Passwords and personal Files to server", "Cleaning Up"]
+        // let iterable = 0;
+        // setInterval((e) => {
+        //     if(iterable>=messageArr.length){
+        //         document.getElementsByClassName("box")[0].innerHTML = "HACKED SUCCESSFULLY"
+        //         e.stopPropogation()
+        //     }
+
+        //         document.getElementsByClassName("box")[0].innerHTML = `${messageArr[iterable]}`
+        //         iterable++;
+        //     }, 2000)
+
+        
+        // Async and Await approach
+        async function hackerTerminal1() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    document.getElementsByClassName("box")[0].innerHTML = "Initialize Hacking..."
+                }, 1000);
+            })
+            
+        }
+        async function hackerTerminal2() {
+            await hackerTerminal1()
+        }
+        hackerTerminal2()
+
+
+        async function hackerTerminal3() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    document.getElementsByClassName("box")[0].innerHTML = "Reading your files..."
+                }, 2000);
+            })
+
+        }
+        async function hackerTerminal4() {
+            await hackerTerminal3()
+        }
+        hackerTerminal4()
+
+        async function hackerTerminal5() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    document.getElementsByClassName("box")[0].innerHTML = "Password files detected..."
+                }, 3000);
+            })
+
+        }
+        async function hackerTerminal6() {
+            await hackerTerminal5()
+        }
+        hackerTerminal6()
+
+        async function hackerTerminal7() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    document.getElementsByClassName("box")[0].innerHTML = "Sending all passwords and personal files to server..."
+                }, 4000);
+            })
+
+        }
+        async function hackerTerminal8() {
+            await hackerTerminal7()
+        }
+        hackerTerminal8()
+
+        async function hackerTerminal9() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    document.getElementsByClassName("box")[0].innerHTML = "Cleaning up..."
+                }, 5000);
+            })
+
+        }
+        async function hackerTerminal10() {
+            await hackerTerminal9()
+        }
+        hackerTerminal10()
+    </script>
+</body>
+
+</html>
