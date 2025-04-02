@@ -1,0 +1,1 @@
+SO in this we will go through with the concept why should we use react ! We will understand this by developing one basic counter.
