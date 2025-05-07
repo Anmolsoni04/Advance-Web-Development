@@ -1,0 +1,13 @@
+- useEffect always use to data fetching, data logging, fetching the data from localStorage on every render of component
+
+Syntax: 
+useEffect (() => {
+
+}, [])
+
+-The array in this useEffect hook which always trigger if something is change.
+
+-BY DEFAULT, the useEffect will give the alert for 2 times because in the rootfile(main.jsx) have the strict mode which is on, if we remove that then we will not able to see the change 2 times.
+
+-React runs the Strictmode 2 times at development not in production. (1 time is for checking and 1 time for actual).
+
