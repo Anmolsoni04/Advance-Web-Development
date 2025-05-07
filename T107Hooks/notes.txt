@@ -1,0 +1,12 @@
+const [count, setCount] = useState(0)
+
+It means that the value of count is 0 and the setCount is the value which always update the value of count.
+
+useState is the hook or function.
+
+HOOKS-> Hooks are special functions in React that let us use features like state and do things when our component loads or updates, all from within function components. This means you can do a lot more with simple functions without needing to write class components.
+
+we can't do something like:
+let a = 5
+<button onclick = {a = a+5}> updatecount </button>
+This is the wrong way , we should always use the smart way like hooks of react.
