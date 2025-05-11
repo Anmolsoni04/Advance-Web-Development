@@ -1,0 +1,36 @@
+- If you using react vite then use Tailwind of Vite react framework.
+link: https://tailwindcss.com/docs/installation/using-vite
+
+- if you want (if (cond) "something will happen otherwise nothing" )
+use:  {/* {showButton && <button>I am temporoary</button> } */}
+
+-if you want (if (cond) somehting will happen otherwise "this will happen" )
+use : { somehting ? "" : "" } // ternary operator
+
+- use map function in the case of rendering list.
+way:
+
+step: 01 use hook like 'usestate'
+
+const[something, setSomething] = useState([
+    { content in json format },
+    { 
+        title: 1,
+        desc: "xyz"
+    },
+])
+
+step: 02 create component within  the file / inside component folder
+
+const Component = (prop) => {
+    return (
+        <div>{prop.title} </div>
+        //anything you want to show on UI
+    )
+}
+
+step : 03 use map function inside the main App.jsx
+
+{somehting.map(prop=>{
+    return (<Todo key = {prop.title} prop = {prop} />)
+})}
